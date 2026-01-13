@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.gstatic.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -57,7 +57,7 @@
                     DevOps Engineer | Linux System Administrator | Cybersecurity Analyst | AWS Cloud Architect
                 </p>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    I bridge the gap between development and operations by implementing robust CI/CD pipelines, automating infrastructure, and maintaining secure cloud environments. My focus is on high availability, scalability, and security.
+                    I design, implement, and maintain secure, high-performance IT infrastructures. My expertise focuses on automating delivery pipelines (CI/CD), in-depth Linux system administration, and scalable AWS cloud architecture.
                 </p>
                 <div class="flex justify-center md:justify-start space-x-6">
                     <a href="https://www.linkedin.com/in/abdul-basit-275812280/" target="_blank" class="text-gray-400 hover:text-brand-700 transition-colors">
@@ -74,24 +74,23 @@
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">About Me</h2>
             <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100">
                 <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    I am a results-oriented IT professional dedicated to streamlining the software delivery lifecycle. My passion is building automated, self-healing, and secure digital infrastructure.
+                    I am a results-oriented IT professional dedicated to aligning technology with strategic goals. My passion is building and defending digital infrastructure. I have a proven track record of reducing server downtime through proactive monitoring and automated remediation scripts.
                 </p>
                 <p class="text-lg text-gray-700 leading-relaxed">
-                    With expertise in DevOps methodologies, I focus on Infrastructure as Code (IaC), containerization, and continuous monitoring to ensure maximum performance and security for cloud-native applications.
+                    I thrive on proactive issue resolution, automating repetitive tasks with Bash and Python, and implementing DevOps best practices to bridge the gap between development and operations.
                 </p>
             </div>
         </section>
 
         <section id="projects" class="mb-24">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Key Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <h3 class="text-xl font-bold mb-3 text-brand-700">CI/CD Pipeline Automation</h3>
-                    <p class="text-gray-600 mb-4">Architected automated deployment pipelines using GitHub Actions and Jenkins to reduce deployment time and human error.</p>
+                    <p class="text-gray-600 mb-4">Streamlined application deployment using GitHub Actions and Jenkins, reducing manual errors by 40%.</p>
                     <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">DevOps</span>
                         <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">Docker</span>
-                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">Jenkins</span>
-                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">Terraform</span>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
@@ -102,47 +101,56 @@
                         <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">AWS</span>
                     </div>
                 </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-bold mb-3 text-brand-700">ICS/SCADA Hardening</h3>
+                    <p class="text-gray-600 mb-4">Developed enhanced access control and monitoring mechanisms to safeguard critical industrial control systems.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">Security</span>
+                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-full">Linux</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="skills" class="mb-24">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-center">
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-brand-100 font-semibold text-brand-800">CI/CD & Jenkins</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Docker & K8s</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Terraform (IaC)</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Linux Admin</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Bash & Python</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">AWS Architecture</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Monitoring (ELK)</div>
-                <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Network Security</div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-center">
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-brand-200 font-bold text-brand-800">Docker & Jenkins</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Linux (RHEL/Ubuntu)</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">AWS Architecture</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Bash & Python</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Terraform (IaC)</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">SELinux & Firewalling</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">IAM & Keycloak</div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 font-semibold">Network Security</div>
             </div>
         </section>
 
         <section id="education" class="mb-24">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Education</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
-                <h3 class="text-xl font-bold text-gray-900">Diploma in Cloud Cyber Security</h3>
-                <p class="text-brand-700 font-medium">AlNafi, Canada (2023 - 2024)</p>
-                <div class="mt-4 pt-4 border-t border-gray-100 text-sm">
-                    <p class="font-bold text-lg">AWS Solutions Architect – Associate</p>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Education & Certifications</h2>
+            <div class="max-w-2xl mx-auto bg-white p-10 rounded-2xl shadow-lg border border-gray-100 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Diploma in Cloud Cyber Security</h3>
+                <p class="text-brand-700 font-semibold mb-6">AlNafi, Canada | 2023 - 2024</p>
+                <div class="pt-6 border-t border-gray-100">
+                    <p class="text-xl font-bold text-gray-800">AWS Solutions Architect – Associate</p>
+                    <p class="text-gray-500">Professional Certification</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="mb-24">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Get In Touch</h2>
-            <div class="max-w-xl mx-auto text-center">
-                <p class="text-lg text-gray-600 mb-8">Ready to discuss your next project? I'm currently open to new opportunities.</p>
-                <a href="mailto:your-email@example.com" class="inline-block bg-brand-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-brand-700 transition-all">
-                    Send an Email
+            <div class="max-w-3xl mx-auto bg-brand-700 rounded-3xl p-12 text-center text-white shadow-2xl">
+                <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
+                <p class="text-brand-100 mb-8 text-lg">I am currently looking for new opportunities in DevOps and Cloud Security.</p>
+                <a href="mailto:your-email@example.com" class="inline-block bg-white text-brand-700 px-10 py-4 rounded-full font-bold text-lg hover:bg-brand-50 transition-all shadow-md">
+                    Send Me an Email
                 </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+    <footer class="bg-gray-900 text-gray-500 py-12 text-center">
         <p>&copy; 2024 Abdul Basit. All rights reserved.</p>
     </footer>
 
