@@ -12,22 +12,12 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         brand: {
-                            50: '#f5f7ff',
-                            100: '#eef2ff',
-                            200: '#dee6ff',
-                            300: '#c2d1ff',
-                            400: '#a2b6fe',
-                            500: '#819afe',
-                            600: '#5e7cfe',
-                            700: '#4a67ed',
-                            800: '#3c52d5',
-                            900: '#3346a9',
-                            950: '#1e2a6d',
+                            50: '#f5f7ff', 100: '#eef2ff', 200: '#dee6ff', 300: '#c2d1ff',
+                            400: '#a2b6fe', 500: '#819afe', 600: '#5e7cfe', 700: '#4a67ed',
+                            800: '#3c52d5', 900: '#3346a9', 950: '#1e2a6d',
                         },
                     }
                 }
@@ -35,36 +25,23 @@
         }
     </script>
     <style>
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #a2b6fe;
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #819afe;
-        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #a2b6fe; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #819afe; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-brand-700 hover:text-brand-600 transition-colors">
-                Abdul Basit
-            </a>
+            <a href="#" class="text-2xl font-bold text-brand-700 hover:text-brand-600 transition-colors">Abdul Basit</a>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#about" class="text-gray-600 hover:text-brand-600 transition-colors font-medium">About</a>
                 <a href="#projects" class="text-gray-600 hover:text-brand-600 transition-colors font-medium">Projects</a>
                 <a href="#skills" class="text-gray-600 hover:text-brand-600 transition-colors font-medium">Skills</a>
                 <a href="#education" class="text-gray-600 hover:text-brand-600 transition-colors font-medium">Education</a>
-                <a href="#contact" class="bg-brand-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-brand-700 transition-all transform hover:-translate-y-0.5">
-                    Contact Me
-                </a>
+                <a href="#contact" class="bg-brand-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-brand-700 transition-all transform hover:-translate-y-0.5">Contact Me</a>
             </div>
             <button class="md:hidden text-gray-700" id="mobile-menu-btn" aria-label="Open menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -82,26 +59,26 @@
     <main class="container mx-auto px-6 py-12 md:py-20">
 
         <section id="hero" class="text-center md:text-left md:flex md:items-center md:space-x-12 mb-24 md:mb-32">
-            <img 
-                src="./Profile.jpg" 
-                alt="Portrait of Abdul Basit" 
-                class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto md:mx-0 shadow-lg object-cover object-top mb-6 md:mb-0"
-            >
+            <div class="relative w-32 h-32 md:w-48 md:h-48 mx-auto md:mx-0 mb-6 md:mb-0">
+                <img 
+                    src="Profile.jpg" 
+                    alt="Abdul Basit" 
+                    class="w-full h-full rounded-full shadow-2xl object-cover object-top border-4 border-white ring-4 ring-brand-100"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Abdul+Basit&background=819afe&color=fff&size=512'"
+                >
+            </div>
+            
             <div>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
-                    Hi, I'm Abdul Basit
-                </h1>
-                <p class="text-2xl md:text-3xl font-medium text-brand-700 mb-6">
-                    Linux System Administrator | Cybersecurity Analyst | AWS Cloud Architect
-                </p>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">Hi, I'm Abdul Basit</h1>
+                <p class="text-2xl md:text-3xl font-medium text-brand-700 mb-6">Linux System Administrator | Cybersecurity Analyst | AWS Cloud Architect</p>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto md:mx-0 mb-8">
                     I design, implement, and maintain secure, high-performance IT infrastructures. My expertise focuses on in-depth Linux system administration, proactive cybersecurity analysis, and scalable AWS architecture.
                 </p>
                 <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="https://www.linkedin.com/in/abdul-basit-275812280/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-sm text-gray-600 hover:bg-gray-100 hover:text-brand-600 transition-all" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/abdul-basit-275812280/" target="_blank" class="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-sm text-gray-600 hover:text-brand-600 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </a>
-                    <a href="https://github.com/AbdulBasit-16" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-sm text-gray-600 hover:bg-gray-100 hover:text-brand-600 transition-all" title="GitHub">
+                    <a href="https://github.com/AbdulBasit-16" target="_blank" class="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-sm text-gray-600 hover:text-brand-600 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
                 </div>
@@ -109,129 +86,44 @@
         </section>
 
         <section id="about" class="mb-24 md:mb-32">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
-                About Me
-            </h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">About Me</h2>
             <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl border border-gray-100">
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    I am a results-oriented IT professional dedicated to aligning technology with strategic goals. My passion is building and defending digital infrastructure.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    I thrive on proactive issue resolution, automating repetitive tasks with Bash and Python scripts, and mentoring junior staff to build knowledgeable, effective teams. I have a proven track record of reducing server downtime (by 30% in a previous role) through proactive monitoring and automated remediation scripts.
-                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">I am a results-oriented IT professional dedicated to aligning technology with strategic goals. My passion is building and defending digital infrastructure.</p>
+                <p class="text-lg text-gray-700 leading-relaxed">I thrive on proactive issue resolution, automating repetitive tasks with Bash and Python scripts, and mentoring junior staff to build knowledgeable, effective teams.</p>
             </div>
         </section>
 
         <section id="projects" class="mb-24 md:mb-32">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">
-                Key Projects & Case Studies
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col group project-card">
-                    <img src="https://placehold.co/600x400/dee6ff/3346a9?text=IAM+Integration" alt="AI-Driven IAM Integration" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Driven Identity & Access Management (IAM) Integration</h3>
-                        <p class="text-gray-600 mb-4 flex-grow">Integrated AI-based risk authentication into Keycloak to create adaptive access policies for multi-cloud (AWS, Azure, on-prem) environments.</p>
-                        <div class="mb-4">
-                            <span class="inline-block bg-brand-50 text-brand-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2">Keycloak</span>
-                            <span class="inline-block bg-brand-50 text-brand-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2">IAM</span>
-                            <span class="inline-block bg-brand-50 text-brand-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2">Multi-Cloud</span>
-                        </div>
-                        <div class="mt-auto flex space-x-3">
-                            <a href="#" class="flex-1 text-center bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all text-sm font-medium">Learn More</a>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Key Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col group">
+                    <img src="https://placehold.co/600x400/dee6ff/3346a9?text=IAM+Integration" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Driven IAM Integration</h3>
+                        <p class="text-gray-600 mb-4">Integrated AI-based risk authentication into Keycloak for multi-cloud environments.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-brand-50 text-brand-700 text-xs font-bold px-2 py-1 rounded">Keycloak</span>
+                            <span class="bg-brand-50 text-brand-700 text-xs font-bold px-2 py-1 rounded">AWS</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col group project-card">
-                    <img src="https://placehold.co/600x400/dee6ff/3346a9?text=ICS/SCADA+Security" alt="ICS/SCADA Security Hardening" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">ICS/SCADA Security Hardening</h3>
-                        <p class="text-gray-600 mb-4 flex-grow">Developed and deployed enhanced access control, logging, and monitoring mechanisms to safeguard critical industrial control systems (ICS).</p>
-                        <div class="mb-4">
-                            <span class="inline-block bg-brand-50 text-brand-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2">Cybersecurity</span>
-                            <span class="inline-block bg-brand-50 text-brand-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2">Linux Hardening</span>
-                        </div>
-                        <div class="mt-auto flex space-x-3">
-                            <a href="#" class="flex-1 text-center bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all text-sm font-medium">Learn More</a>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col group">
+                    <img src="https://placehold.co/600x400/dee6ff/3346a9?text=SCADA+Security" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">ICS/SCADA Hardening</h3>
+                        <p class="text-gray-600 mb-4">Secured critical industrial control systems using Linux hardening and CIS benchmarks.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-brand-50 text-brand-700 text-xs font-bold px-2 py-1 rounded">Cybersecurity</span>
+                            <span class="bg-brand-50 text-brand-700 text-xs font-bold px-2 py-1 rounded">Linux</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="skills" class="mb-24 md:mb-32">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">
-                Technical Skills
-            </h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                        <h3 class="text-xl font-semibold text-brand-700 mb-4 text-center">Scripting & Automation</h3>
-                        <ul class="flex flex-wrap justify-center gap-2">
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">Bash</li>
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">Python</li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                        <h3 class="text-xl font-semibold text-brand-700 mb-4 text-center">Security & Networking</h3>
-                        <ul class="flex flex-wrap justify-center gap-2">
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">SELinux</li>
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">Firewalls</li>
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">AWS Security</li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                        <h3 class="text-xl font-semibold text-brand-700 mb-4 text-center">Infrastructure</h3>
-                        <ul class="flex flex-wrap justify-center gap-2">
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">AWS</li>
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">Nagios</li>
-                            <li class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">LVM</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="mb-24 md:mb-32">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
-                Education & Certifications
-            </h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-xl border border-gray-100 text-center">
-                <h3 class="text-xl font-bold text-gray-900">Diploma in Cloud Cyber Security</h3>
-                <p class="text-lg font-medium text-brand-700 mb-2">AlNafi, Canada</p>
-                <p class="text-gray-600">2023 - 2024</p>
-                <hr class="my-6 border-brand-100">
-                <h3 class="text-xl font-bold text-gray-900">Professional Certifications</h3>
-                <p class="text-lg font-medium text-brand-700 mb-2">AWS Solutions Architect – Associate</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Get In Touch</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl border border-gray-100">
-                <form id="contact-form">
-                    <div class="mb-6">
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your Email</label>
-                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500" required></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-brand-600 text-white py-3 rounded-lg font-semibold hover:bg-brand-700 transition-all">Send Message</button>
-                </form>
-                <p id="form-message" class="text-center mt-6 text-brand-700 font-medium hidden"></p>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 mt-24 py-12 text-center">
+    <footer class="bg-gray-800 text-gray-300 py-12 text-center">
         <p>&copy; <span id="current-year"></span> Abdul Basit. All rights reserved.</p>
     </footer>
 
